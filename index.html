@@ -1,56 +1,151 @@
-Alt Peek
-Privacy Policy
-Last updated: August 2, 2026
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Alt Peek privacy policy.">
+    <title>Alt Peek Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --page: #f5f8fb;
+        --surface: #ffffff;
+        --text: #142033;
+        --muted: #526174;
+        --line: #dbe5ee;
+        --accent: #057fa8;
+        --accent-soft: #e4f5fa;
+      }
 
-Alt Peek is a Chrome extension that lets you preview links and selected-text searches in an overlay without leaving the current page. This policy explains the information the extension handles and why.
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --page: #101821;
+          --surface: #17222e;
+          --text: #edf6fb;
+          --muted: #b4c2cf;
+          --line: #2a3b4c;
+          --accent: #67c9e7;
+          --accent-soft: #143746;
+        }
+      }
 
-Information Alt Peek handles
-Alt Peek handles only the information needed for its visible features:
+      * { box-sizing: border-box; }
 
-hostnames of open tabs, so it can show the correct enabled or disabled icon state;
-links you explicitly choose to preview, open, or copy, and the destination URL displayed in a preview;
-text you explicitly select when selected-text search is enabled, plus terms entered into the in-preview find bar;
-extension preferences, such as feature toggles, theme, disabled websites, and appearance settings; and
-non-identifying local interface state used for optional support-page details.
-Alt Peek does not intentionally collect form entries, passwords, authentication information, payment information, personal communications, or your complete browsing history.
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--text);
+        font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
 
-How this information is used
-The information above is used only to provide the requested feature: showing a selected link in the overlay, opening or copying a link, applying a per-site setting, searching text after you activate the search button, finding text inside an open preview, and applying your preferences.
+      main {
+        width: min(100% - 32px, 820px);
+        margin: 56px auto;
+        padding: 44px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        box-shadow: 0 18px 50px rgb(27 49 66 / 10%);
+      }
 
-URLs, selected text, and find terms are processed locally by the extension. They are not sent to servers controlled by Alt Peek or Lanito Labs.
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18px;
+        color: var(--accent);
+        font-weight: 700;
+      }
 
-External websites and Google Search
-When you open a preview, your browser connects directly to the destination website. That website may receive information normally included in a web request, such as the requested URL, IP address, cookies, or other browser-provided data, according to its own privacy policy.
+      .mark {
+        width: 24px;
+        height: 24px;
+        border: 3px solid currentColor;
+        border-radius: 5px;
+        box-shadow: -7px -7px 0 -4px var(--surface), -7px -7px 0 -1px currentColor;
+      }
 
-When you activate selected-text search, the selected text is sent directly to Google as a search query over HTTPS. This happens only after your explicit action and is subject to Google's Privacy Policy.
+      h1, h2 { line-height: 1.25; }
+      h1 { margin: 0; font-size: clamp(30px, 5vw, 42px); }
+      h2 { margin: 38px 0 10px; font-size: 21px; }
+      p, ul { margin: 10px 0; }
+      ul { padding-left: 24px; }
+      .updated { color: var(--muted); }
+      .notice {
+        margin-top: 28px;
+        padding: 16px 18px;
+        background: var(--accent-soft);
+        border-left: 3px solid var(--accent);
+        border-radius: 6px;
+      }
+      a { color: var(--accent); }
+      footer {
+        margin-top: 42px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
 
-Storage and retention
-Alt Peek stores preferences and disabled hostnames using Chrome's synchronized extension storage. Chrome may synchronize these preferences between browser profiles connected to the same Google account, depending on Chrome's own synchronization and privacy settings. Non-identifying support-page interface state is stored locally.
+      @media (max-width: 560px) {
+        main { width: min(100% - 20px, 820px); margin: 16px auto; padding: 28px 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="brand"><span class="mark" aria-hidden="true"></span>Alt Peek</div>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: August 2, 2026</p>
 
-Alt Peek does not operate a developer-controlled database. Preview URLs and selected text are not retained after the requested action. Stored settings remain until you change them, clear extension data, or uninstall the extension, subject to Chrome's synchronization behavior.
+      <p>Alt Peek is a Chrome extension that lets you preview links and selected-text searches in an overlay without leaving the current page. This policy explains the information the extension handles and why.</p>
 
-Sharing, analytics, and advertising
-Alt Peek does not sell user data and does not include analytics, telemetry, advertising trackers, or behavioral profiling. It does not share browsing data with Alt Peek or Lanito Labs servers because no such data-collection server is used.
+      <h2>Information Alt Peek handles</h2>
+      <p>Alt Peek handles only the information needed for its visible features:</p>
+      <ul>
+        <li>hostnames of open tabs, so it can show the correct enabled or disabled icon state;</li>
+        <li>links you explicitly choose to preview, open, or copy, and the destination URL displayed in a preview;</li>
+        <li>text you explicitly select when selected-text search is enabled, plus terms entered into the in-preview find bar;</li>
+        <li>extension preferences, such as feature toggles, theme, disabled websites, and appearance settings; and</li>
+        <li>non-identifying local interface state used for optional support-page details.</li>
+      </ul>
+      <p>Alt Peek does not intentionally collect form entries, passwords, authentication information, payment information, personal communications, or your complete browsing history.</p>
 
-Optional donations open Stripe in a separate browser page. Payment information is handled directly by Stripe and is not received or stored by Alt Peek.
+      <h2>How this information is used</h2>
+      <p>The information above is used only to provide the requested feature: showing a selected link in the overlay, opening or copying a link, applying a per-site setting, searching text after you activate the search button, finding text inside an open preview, and applying your preferences.</p>
+      <p>URLs, selected text, and find terms are processed locally by the extension. They are not sent to servers controlled by Alt Peek or Lanito Labs.</p>
 
-Permissions and security
-Alt Peek requests access to HTTP and HTTPS pages so its visible preview, link-copy, selected-text search, and per-site controls can work on supported websites. While a preview is active, it uses a temporary, tab-scoped browser rule to help compatible websites appear inside the preview. That rule is removed when the preview closes or the source tab navigates.
+      <h2>External websites and Google Search</h2>
+      <p>When you open a preview, your browser connects directly to the destination website. That website may receive information normally included in a web request, such as the requested URL, IP address, cookies, or other browser-provided data, according to its own privacy policy.</p>
+      <p>When you activate selected-text search, the selected text is sent directly to Google as a search query over HTTPS. This happens only after your explicit action and is subject to <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
 
-Alt Peek does not execute remotely hosted code.
+      <h2>Storage and retention</h2>
+      <p>Alt Peek stores preferences and disabled hostnames using Chrome's synchronized extension storage. Chrome may synchronize these preferences between browser profiles connected to the same Google account, depending on Chrome's own synchronization and privacy settings. Non-identifying support-page interface state is stored locally.</p>
+      <p>Alt Peek does not operate a developer-controlled database. Preview URLs and selected text are not retained after the requested action. Stored settings remain until you change them, clear extension data, or uninstall the extension, subject to Chrome's synchronization behavior.</p>
 
-Your choices
-You can disable individual features, disable Alt Peek on specific websites, clear the disabled-site list, clear extension data through Chrome, or uninstall the extension at any time.
+      <h2>Sharing, analytics, and advertising</h2>
+      <p>Alt Peek does not sell user data and does not include analytics, telemetry, advertising trackers, or behavioral profiling. It does not share browsing data with Alt Peek or Lanito Labs servers because no such data-collection server is used.</p>
+      <p>Optional donations open Stripe in a separate browser page. Payment information is handled directly by Stripe and is not received or stored by Alt Peek.</p>
 
-Chrome Web Store Limited Use
-Alt Peek's use of information received from Chrome APIs follows the Chrome Web Store User Data Policy, including its Limited Use requirements. Information is used only to provide or improve the extension's disclosed, user-facing features.
+      <h2>Permissions and security</h2>
+      <p>Alt Peek requests access to HTTP and HTTPS pages so its visible preview, link-copy, selected-text search, and per-site controls can work on supported websites. While a preview is active, it uses a temporary, tab-scoped browser rule to help compatible websites appear inside the preview. That rule is removed when the preview closes or the source tab navigates.</p>
+      <p>Alt Peek does not execute remotely hosted code.</p>
 
-Changes to this policy
-This policy may be updated when Alt Peek's features or data practices change. The date at the top identifies the latest revision. Material changes will be disclosed through the extension or its Chrome Web Store listing when required.
+      <h2>Your choices</h2>
+      <p>You can disable individual features, disable Alt Peek on specific websites, clear the disabled-site list, clear extension data through Chrome, or uninstall the extension at any time.</p>
 
-Contact
-For privacy questions or support, contact lanitolabs@gmail.com.
+      <h2>Chrome Web Store Limited Use</h2>
+      <p>Alt Peek's use of information received from Chrome APIs follows the Chrome Web Store User Data Policy, including its Limited Use requirements. Information is used only to provide or improve the extension's disclosed, user-facing features.</p>
 
-Alt Peek is an independent project by Lanito Labs.
+      <h2>Changes to this policy</h2>
+      <p>This policy may be updated when Alt Peek's features or data practices change. The date at the top identifies the latest revision. Material changes will be disclosed through the extension or its Chrome Web Store listing when required.</p>
 
-Copyright © 2026 Lanito Labs. All rights reserved.
+      <h2>Contact</h2>
+      <p>For privacy questions or support, contact <a href="mailto:lanitolabs@gmail.com">lanitolabs@gmail.com</a>.</p>
+
+      <p class="notice">Alt Peek is an independent project by Lanito Labs.</p>
+
+      <footer>Copyright &copy; 2026 Lanito Labs. All rights reserved.</footer>
+    </main>
+  </body>
+</html>
