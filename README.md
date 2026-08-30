@@ -46,7 +46,7 @@ The optional support page can open Stripe or Patreon in a separate browser tab a
 
 Extension preferences and disabled hostnames are stored using Chrome's synchronized extension storage. Chrome may synchronize those preferences between browser profiles connected to the same Google account according to Chrome's synchronization and privacy settings.
 
-Non-identifying interface state is stored using Chrome's local extension storage. The support reminder is first eligible seven days after the first preview use and, once shown or acknowledged, is not eligible again for one year. These local values remain until the user clears extension data or uninstalls the extension.
+Non-identifying interface state is stored using Chrome's local extension storage. The support reminder is first eligible seven days after the first preview use and, once shown or acknowledged, is not eligible again for six months. These local values remain until the user clears extension data or uninstalls the extension.
 
 Preview URLs, selected text, in-preview find terms, pointer coordinates, extension shortcut events, clicks, and wheel gestures are not retained by Alt Peek after the requested action. Stored settings remain until the user changes them, clears extension data, or uninstalls the extension, subject to Chrome's synchronization behavior.
 
