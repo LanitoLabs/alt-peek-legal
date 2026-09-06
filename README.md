@@ -1,6 +1,6 @@
 # Alt Peek Privacy Policy
 
-Last updated: August 30, 2026
+Last updated: September 6, 2026
 
 Alt Peek is a browser extension that opens user-requested links and selected-text searches in an overlay without replacing the current page. This policy explains the information the extension handles, why it is needed, where it is sent, and how users can control it.
 
@@ -12,7 +12,7 @@ Alt Peek handles only the information needed for its disclosed, user-facing feat
 - **User activity:** activation clicks or long presses, extension keyboard shortcuts, wheel gestures used for preview zoom or scrolling, and pointer coordinates used to place contextual controls. This interaction data is processed temporarily while the feature is used and is not retained or sent to developer-controlled servers.
 - **Website content:** links under the pointer, text the user explicitly selects when selected-text search is enabled, and terms the user types into the in-preview find bar.
 - **Extension settings:** theme, feature toggles, disabled hostnames, visual preferences, and other configuration choices.
-- **Local interface state:** non-identifying timestamps and progress values used for optional interface details and the infrequent support reminder, such as the first day a preview was used, settings-page decorative progress, and the most recent time the reminder or a support button was shown or activated.
+- **Local interface state:** non-identifying timestamps, counters, and preferences used for optional interface details and the infrequent support reminder, such as the first day a preview was used, the number of preview openings up to the reminder threshold, settings-page decorative progress, the next eligible reminder time, and whether the user permanently disabled the reminder.
 
 Alt Peek does not intentionally collect personally identifying information, health information, financial or payment information, authentication information, personal communications, precise location, form entries, passwords, or a complete browsing history.
 
@@ -46,7 +46,7 @@ The optional support page can open Stripe or Patreon in a separate browser tab a
 
 Extension preferences and disabled hostnames are stored using Chrome's synchronized extension storage. Chrome may synchronize those preferences between browser profiles connected to the same Google account according to Chrome's synchronization and privacy settings.
 
-Non-identifying interface state is stored using Chrome's local extension storage. The support reminder is first eligible seven days after the first preview use and, once shown or acknowledged, is not eligible again for six months. These local values remain until the user clears extension data or uninstalls the extension.
+Non-identifying interface state is stored using Chrome's local extension storage. The support reminder is first eligible after both seven days and ten preview openings. Choosing Not now postpones it for 30 days; opening support, choosing Already supported, or allowing the reminder to close automatically postpones it for 180 days. Users can disable future reminders until extension data is cleared or the extension is uninstalled.
 
 Preview URLs, selected text, in-preview find terms, pointer coordinates, extension shortcut events, clicks, and wheel gestures are not retained by Alt Peek after the requested action. Stored settings remain until the user changes them, clears extension data, or uninstalls the extension, subject to Chrome's synchronization behavior.
 
