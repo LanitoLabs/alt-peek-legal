@@ -1,6 +1,6 @@
 # Alt Peek Privacy Policy
 
-Last updated: September 6, 2026
+Last updated: September 14, 2026
 
 Alt Peek is a browser extension that opens user-requested links and selected-text searches in an overlay without replacing the current page. This policy explains the information the extension handles, why it is needed, where it is sent, and how users can control it.
 
@@ -40,7 +40,7 @@ For links to individual X posts, Alt Peek loads X's public embedded-post viewer 
 
 On X pages, Alt Peek briefly loads the current X URL in an invisible frame while its temporary X-domain-scoped header rule is active. This uses the existing browser session and sends no data to Alt Peek or Lanito Labs servers. The frame and its preparation rule are removed after four seconds. This prepares direct X previews to reuse the authenticated browser session.
 
-The optional support page can open Stripe or Patreon in a separate browser tab after the user chooses a donation or membership option. Payment and membership information is handled directly by the selected provider under its own privacy policy and is not received or stored by Alt Peek or Lanito Labs. Copying the optional public cryptocurrency address does not transmit information to Alt Peek.
+The optional support page can open Stripe, PayPal, or Patreon in a separate browser tab after the user chooses a donation or membership option. Payment and membership information is handled directly by the selected provider under its own privacy policy and is not received or stored by Alt Peek or Lanito Labs. Copying the optional public cryptocurrency address does not transmit information to Alt Peek.
 
 ## Storage and Retention
 
@@ -54,7 +54,7 @@ Preview URLs, selected text, in-preview find terms, pointer coordinates, extensi
 
 Alt Peek does not sell user data. It does not include analytics, telemetry, advertising trackers, behavioral profiling, or data used to determine creditworthiness or for lending purposes.
 
-Information leaves the extension only when required for an explicit user-facing action: loading the destination website, submitting a user-activated selected-text query to Google, loading X content for an X preview, synchronizing settings through Chrome when browser sync is enabled, or opening Stripe or Patreon after the user chooses a support option. Alt Peek does not transfer user data to unrelated third parties.
+Information leaves the extension only when required for an explicit user-facing action: loading the destination website, submitting a user-activated selected-text query to Google, loading X content for an X preview, synchronizing settings through Chrome when browser sync is enabled, or opening Stripe, PayPal, or Patreon after the user chooses a support option. Alt Peek does not transfer user data to unrelated third parties.
 
 ## Security and Permissions
 
